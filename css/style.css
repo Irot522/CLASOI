@@ -1,0 +1,610 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{margin: 0; padding: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none; color: #333;}
+body{
+    color: #333; 
+    min-width: 1260px;
+    /* padding-top: 140px; */
+}
+
+body p{
+    font-family: 'S-CoreDream';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 26px;
+}
+body h1{
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 55px;
+}
+
+/* ------------- 코드시작 ---------------- */
+/* #header{
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+} */
+/* header-scrolled */
+/* #header.header-scrolled {
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.5s;
+} */
+.header_inner{
+    width: 1200px;
+    height: 140px;
+    margin: auto;
+    position: relative;
+}
+
+#header ul li{padding-top: 30px;}
+.header_icon_l{float: left;}
+.header_icon_r{float: right;}
+.header_icon_l li{float: left;}
+.header_icon_r li{float: left;}
+.header_icon_l li:nth-child(2){padding: 30px 24px 0;}
+.header_icon_r li:nth-child(2){padding: 30px 24px 0;}
+.header_logo{
+    position: absolute;
+    left: 510px;
+    top: 30px;
+}
+
+.gnb{
+    position: absolute; 
+    left: 26%; 
+    top: 75px;
+}
+.gnb li{float: left;}
+.gnb li a{padding: 0 40px 13px;}
+/* ----------------------- main_banner ------------------------- */
+#main_banner{
+    height: 830px;
+    background-image: url(../CLASOI_img/main/main_banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* overflow: hidden; */
+}
+.main_banner_inner{
+    width: 1200px;
+    margin: auto;
+}
+.main_banner_inner h1{
+    font-size: 40px;
+    padding-top: 300px;
+    color: #fff;
+}
+.main_banner_inner p{
+    padding: 40px 0;
+    color: #fff;
+}
+/* --------------------- main_best --------------------- */
+#main_best{
+    width: 1200px;
+    overflow: hidden;
+    margin: auto;
+}
+#main_best > p, #main_best > h1{text-align: center;}
+#main_best > p{margin-top: 100px;}
+#main_best > h1{margin-bottom: 0px;}
+#main_best li{height: 510px; margin-top: 60px;}
+.main_best_ul li:nth-child(1){float: left;}
+.main_best_ul li:nth-child(2){float: right;}
+#main_best p{font-size: 16px;}
+.main_best_text h1{margin-top: 100px; margin-bottom: 40px;}
+.main_best_text p{margin-bottom: 50px;}
+/* ------------------ main_midbanner ------------------- */
+#main_midbanner{
+    height: 550px;
+    margin-top: 100px;
+    background-image:url(../CLASOI_img/main/mid_banner.png);
+    background-attachment: fixed;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+}
+.main_midbanner_inner{
+    width: 1200px;
+    margin: auto;
+    color: #fff;
+}
+.mid_banner_en{
+    font-size: 26px;
+    font-weight: 300;
+    padding-top: 150px;
+    height: 32px;
+}
+.main_midbanner_inner p{margin: 30px 0 50px 0;}
+/* ------------------ main_product ----------------- */
+#main_product{
+    width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+#main_product h2{
+    text-align: center;
+}
+#main_product > h3, #main_product > h1{text-align: center;}
+.main_product_ul{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.main_product_ul li{
+    float: left;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* medium */
+    cursor: pointer;
+}
+.main_product_ul li:hover{
+    background-color: #ac8c79;
+    border-radius:30px;
+    border: 0px solid;
+    color: #fff;
+}
+.on{
+    background-color: #ac8c79;
+    border-radius:30px;
+    border: 0px solid;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.main_product_product li{
+    float: left;
+    width: 285px;
+    height: 520px;
+    margin-bottom: 50px;
+    /* background-color: #555555; */
+}
+.main_product_product li:nth-child(2){margin: 0px 20px;}
+.main_product_product li:nth-child(3){margin-right: 20px;}
+.main_product_product li h1{
+    background-color: #f7f7f7;
+    height: 360px;
+}
+.main_product_product_title{
+    font-size: 18px;
+    margin-top: 19px;
+    margin-bottom: 30px;
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    font-style: normal;
+}
+.main_product_product_en a{
+    font-size: 13px;
+    color: #ac8c79;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* regular */
+}
+.main_product_product_price{
+    font-size: 22px;
+    border-top: solid 1px #000;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* medium */
+}
+/*  */
+
+.main_product_img img{
+    display: block;
+    transform: scale(0.7);
+    transition: transform 0.7s;
+    padding: 40px 0 0 50px;
+}
+.main_product_img img:hover{
+    transform: scale(0.9);   
+}
+
+
+.section{
+	width:90%;
+	height:640px;	/* 이미지 높이 */
+	float:right;
+	position:relative;
+}
+.section2{
+	width:1200px;
+	height:340px;	/* 이미지 높이 */
+	position:relative;
+    margin: 0 auto;
+}
+.img_wrap{
+	position:absolute;
+	top:0;
+	right:0;
+	width:60%;
+}
+.img_wrap2{
+	position:absolute;
+	top:0;
+	right:0;
+	width:100%;
+    height: 100%;
+}
+.img_slide{
+	position: relative;
+	height: 100%;
+}
+
+.img1,.img2,.img4{
+    top:-50;
+	left:-107px;	
+}
+.img3{
+    top:-50;
+    left:-90px;	
+}
+.img1,.img2,.img3,.img4{
+	position:absolute;
+	width:100%;
+	height:640px;
+	background-size:cover;
+}
+.img5,.img6,.img7,.img8{
+	position:absolute;
+    left: 0;
+    top: 0;
+	width:100%;
+	background-size:cover;
+    height: 100%;
+}
+
+
+
+.img1{
+	z-index:2;
+	background:url(../CLASOI_img/main/product_main1.png) no-repeat left center;
+}
+.img2{
+	background:url(../CLASOI_img/main/product_main2.png) no-repeat left center;
+}
+.img3{
+	background:url(../CLASOI_img/main/product_main3.png) no-repeat left center;
+}
+.img4{
+	background:url(../CLASOI_img/main/product_main4.png) no-repeat left center;
+}
+.img5{
+	background:url(../CLASOI_img/product/product_midbanner.png) no-repeat left center;
+}
+.img6{
+	background:url(../CLASOI_img/product/product_midbanner2.png) no-repeat left center;
+}
+.img7{
+	background:url(../CLASOI_img/product/product_midbanner3.png) no-repeat left center;
+}
+.img8{
+	background:url(../CLASOI_img/product/product_midbanner4.png) no-repeat left center;
+}
+/* ================ 2번째배너 ================= */
+#main_underbanner{
+    margin: auto;
+    margin-top: 110px;
+    /* width: 1920px; */
+    height: 427px;
+    background: url(../CLASOI_img/main/event_banner.png) no-repeat center;
+}
+
+/* =============== main sns ================= */
+#main_sns{
+    width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+.main_sns_ul li{
+    margin-top: 100px;
+    width: 285px;
+    height: 285px;
+    float: left;
+    background-color: #8b8b8b;
+}
+.main_sns_ul li:nth-child(2){margin: 100px 20px 140px;}
+.main_sns_ul li:nth-child(3){margin: 100px 20px 140px 0;}
+
+.main_sns_video{margin-top: 70px; width: 1200px; height: 675px; clear: both;}
+
+/* =============== footer ============== */
+#footer_wrap{border-top: solid 1px #555555;}
+.footer{
+    width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    padding-bottom: 80px;
+}
+.footer_ul1{margin-top: 60px;}
+.footer_ul1 h1{display: inline-block;}
+.footer_ul1 li:nth-child(1){float: left;}
+.footer_ul1 li:nth-child(2){float: right;}
+.footer_ul1 li:nth-child(2) h2{
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+}
+.footer_ul1 li:nth-child(2) p{
+    float: right;
+    color: #8b8b8b;
+}
+.footer_ul2{clear: both;}
+.footer_ul2 li:nth-child(2){margin: 0 27px 15px 27px;}
+.footer_ul2 li:nth-child(4){margin: 0 27px 15px 27px;}
+.footer_ul2 li{
+    float: left;
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    font-style: normal;
+}
+.footer_p1{clear: both;}
+.footer_p1 li{
+    margin: 3px 0;
+    float: left;
+    font-family: 'S-CoreDream';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    color: #8b8b8b;
+}
+.footer_p1 li:nth-child(2){margin: 3px 20px;}
+.footer_number{
+    position: absolute;
+    right: 0;
+    top: 200px;
+    text-align: right;
+}
+.footer_number li:nth-child(1){
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+}
+.footer_number li:nth-child(2){
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* ========================== [brand] ================================================== */
+#brand p{font-size: 16px;}
+#brand_banner{
+    height: 700px;
+    background: url(../CLASOI_img/brand/brand_banner.png) no-repeat center;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 180px 0 0 0px;
+}
+.brand_banner_inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+#brand_banner h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Light */
+    font-size: 24px;
+}
+#brand_banner h1{
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 41px;
+    margin: 10px 0 40px;
+}
+
+#brand_logo{
+    height: 720px;
+    width: 1200px;
+    margin: auto;
+}
+#brand_logo > h1{text-align: center;}
+#brand_logo ul li{
+    width: 590px;
+    height: 350px;
+}
+#brand_logo ul li:nth-child(1){
+    float: left;
+    background: url(../CLASOI_img/brand/brand_logo_logo.png) bottom left no-repeat;
+}
+#brand_logo ul li:nth-child(2){float: right;}
+
+#brand_logo ul li:nth-child(1) h1{
+    height: 47px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+#brand_logo ul li:nth-child(1) p{color: #777777;}
+
+
+/* brand_concept */
+#brand_concept_wrap{
+    background-color: #f7f7f7;
+}
+#brand_concept > h1{text-align: center;}
+#brand_concept{
+    height: 1640px;
+    width: 1200px;
+    margin: auto;
+}
+.brand_concept_lirt li{width: 590px; height: 400px;}
+.brand_concept_lirt li:nth-child(1){float: left;}
+.brand_concept_lirt li:nth-child(2){float: right; padding-left: 80px; box-sizing: border-box;}
+
+.brand_concept_ltri li{width: 590px; height: 400px; margin: 50px 0;}
+.brand_concept_ltri li:nth-child(1){float: right;}
+.brand_concept_ltri li:nth-child(2){float: left;}
+
+#brand_concept ul li h1{font-size: 40px; margin: 65px 0 0;}
+#brand_concept ul li h2{font-size: 18px; display: inline-block;}
+.concept_line{padding: 0 10px 6px;}
+#brand_concept ul li p{color: #777777; margin-top: 50px;}
+
+/* brand_midbanner */
+#brand_midbanner{
+    height: 445px;
+    background: url(../CLASOI_img/brand/brand_mid_banner.png) no-repeat center;
+    text-align: center;
+    color: #fff;
+}
+#brand_midbanner h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Light */
+    font-size: 24px;
+    padding: 190px 0 10px;
+}
+#brand_midbanner h1{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+/* brand_mood */
+#brand_mood > h1{text-align: center;}
+#brand_mood{
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.brand_mood_textdiv{margin-top: 250px;}
+.brnad_mood_ul li{float: left;width: 285px; padding-bottom: 100px;}
+.brnad_mood_ul li:nth-child(2){margin: 0 20px;}
+.brnad_mood_ul li:nth-child(3){
+    margin-right: 20px;
+    padding: 339px 0 0;
+}
+.brnad_mood_ul li:nth-child(4){
+    padding: 524px 0 0;
+    background: url(../CLASOI_img/brand/brand_mood_logo.png) no-repeat right top;
+}
+
+/* ==== product ==== */
+#product_banner{
+    height: 700px;
+    margin: auto;
+    background: url(../CLASOI_img/product/product_banner_img.png) no-repeat center;
+}
+
+#product_container{
+    width: 1200px;
+    margin: 30px auto 20px;
+    text-align: center;
+}
+.product_banner1{
+    background: url(../CLASOI_img/product/product_midbanner.png) no-repeat center;
+    height: 340px;
+    clear: both;
+}
+
+.product_product{
+    width: 1200px;
+    margin: auto;
+}
+.margintop50{
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+#product_under{ 
+    text-align: center;
+}
+#product_under img{
+    display: inline-block;
+    margin: 60px 0 100px;
+}
+
+
+/* ========= class 단일명령코드, 중복사용코드 ========= */
+.white_button a{ /* 흰색 버튼 */
+    font-size: 15px;
+    display: inline-block;
+    border: solid 1px #fff;
+    border-radius:30px;
+    padding: 15px 25px;
+    color: white;
+}
+.white_button a:hover{
+    border: solid 1px #fff;
+    background-color: #ac8c79;
+}
+.brown_button a{ /* 갈색 버튼 */
+    font-size: 15px;
+    display: inline-block;
+    border: solid 1px #ac8c79;
+    border-radius:30px;
+    padding: 15px 25px;
+    color: #ac8c79;
+}
+.brown_button a:hover{
+    border: solid 1px #fff;
+    background-color: #ac8c79;
+    color: #fff;
+}
+
+.title_mini{font-size: 16px; color: #8b8b8b; padding-top: 70px; height: 35px; /*roboto5*/} 
+.title_main{font-size: 32px; color: #333333; margin-bottom: 70px; /*에스코어5*/}
+/* ========= 폰트: 에스코어, 로보트 ========= */
+.s-core3{
+    font-family: 'S-CoreDream';
+    font-weight: 300;
+    font-style: normal;
+}
+.s-core4{
+    font-family: 'S-CoreDream';
+    font-weight: 400;
+    font-style: normal;
+}
+.s-core5{
+    font-family: 'S-CoreDream';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* regular */
+}
+.roboto5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* medium */
+}
+.roboto6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; /* bold */
+}
+
